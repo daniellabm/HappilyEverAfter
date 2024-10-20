@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappilyEverAfter - Budget Planning</title>
+    <link rel="stylesheet" href="./resources/css/index.css">
+    <script>
+        function calculateTotal() {
+            // Get all the selected prices
+            let total = 0;
+            const items = document.querySelectorAll('.price-range');
+            items.forEach(item => {
+                const value = parseInt(item.value);
+                if (!isNaN(value)) {
+                    total += value;
+                }
+            });
+
+            // Display the total
+            document.getElementById('total').innerText = `Total Estimated Cost: $${total}`;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Budget Planning</h1>
+    <p>Please select the price ranges for your checklist items:</p>
+    
+    <form>
+        <label for="venue">Venue:</label>
+        <select id="venue" class="price-range" onchange="calculateTotal()">
+            <option value="0">Select a range</option>
+            <option value="2000">Under $2000</option>
+            <option value="5000">Under $5000</option>
+            <option value="10000">Under $10000</option>
+            <option value="20000">Above $10000</option>
+        </select>
+        <br>
+
+        <label for="guest-list">Catering:</label>
+        <select id="catering" class="price-range" onchange="calculateTotal()">
+            <option value="0">Select a range</option>
+            <option value="1000">Under $1000</option>
+            <option value="3000">Under $3000</option>
+            <option value="5000">Under $5000</option>
+            <option value="10000">Above $5000</option>
+        </select>
+        <br>
+
+        <label for="photographer">Photographer:</label>
+        <select id="photographer" class="price-range" onchange="calculateTotal()">
+            <option value="0">Select a range</option>
+            <option value="500">Under $500</option>
+            <option value="1500">Under $1500</option>
+            <option value="3000">Under $3000</option>
+            <option value="5000">Above $3000</option>
+        </select>
+        <br>
+
+        <label for="suit">Groom's Suit:</label>
+        <select id="suit" class="price-range" onchange="calculateTotal()">
+            <option value="0">Select a range</option>
+            <option value="200">Under $200</option>
+            <option value="500">Under $500</option>
+            <option value="1000">Under $1000</option>
+            <option value="2000">Above $1000</option>
+        </select>
+        <br>
+
+        <label for="dress">Bride's Dress:</label>
+        <select id="dress" class="price-range" onchange="calculateTotal()">
+            <option value="0">Select a range</option>
+            <option value="500">Under $500</option>
+            <option value="1500">Under $1500</option>
+            <option value="3000">Under $3000</option>
+            <option value="5000">Above $3000</option>
+        </select>
+        <br>
+
+        <label for="dj">Hair stylist:</label>
+        <select id="dj" class="price-range" onchange="calculateTotal()">
+            <option value="0">Select a range</option>
+            <option value="300">Under $300</option>
+            <option value="800">Under $800</option>
+            <option value="1500">Under $1500</option>
+            <option value="3000">Above $1500</option>
+        </select>
+        <br>
+
+        <label for="dj">Makeup artist:</label>
+        <select id="dj" class="price-range" onchange="calculateTotal()">
+            <option value="0">Select a range</option>
+            <option value="300">Under $300</option>
+            <option value="800">Under $800</option>
+            <option value="1500">Under $1500</option>
+            <option value="3000">Above $1500</option>
+        </select>
+        <br>
+
+        <label for="dj">Rings:</label>
+        <select id="dj" class="price-range" onchange="calculateTotal()">
+            <option value="0">Select a range</option>
+            <option value="300">Under $300</option>
+            <option value="800">Under $800</option>
+            <option value="1500">Under $1500</option>
+            <option value="3000">Above $1500</option>
+        </select>
+        <br>
+
+        <label for="dj">DJ:</label>
+        <select id="dj" class="price-range" onchange="calculateTotal()">
+            <option value="0">Select a range</option>
+            <option value="300">Under $300</option>
+            <option value="800">Under $800</option>
+            <option value="1500">Under $1500</option>
+            <option value="3000">Above $1500</option>
+        </select>
+        <br>
+        
+        <h3 id="total">Total Estimated Cost: $0</h3>
+    </form>
+
+    <a href="./index.html">
+        <div class="back-button-design">
+        <button class="back-button">Back to home page</button>
+        </div>
+    </a>
+</body>
+</html>
