@@ -1,0 +1,251 @@
+body{
+    background-color: antiquewhite;
+    margin: 0%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: indianred;
+    font-size: 80px;
+    margin-top: 50px;
+}
+
+.introP{
+    text-align: center;
+    color: indianred;
+    font-size: medium;
+    margin-top: -30px;
+}
+
+
+.congrats-paragraph{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: indianred;
+}
+
+.banners{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.banner{
+    border: 2px white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.banner:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.banner-image{
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    margin: 10px auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) 
+{
+    .banner {
+        width: 100%;
+        max-width: 300px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+}
+
+.banner button {
+    background-color: indianred;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.banner button:hover {
+    background-color: black;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+li{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+li:hover{
+    background-color: indianred;
+}
+
+input[type="checkbox"]
+{
+    margin-right: 10px;
+    transform:scale(1.2);
+}
+
+p{
+    text-align: center;
+    font-size: 18px;
+    margin: 20px auto;
+    margin-bottom: 40px;
+}
+
+button.back-button {
+    background-color: indianred; 
+    color: white; 
+    padding: 12px 24px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 18px; 
+    transition: background-color 0.3s ease; 
+    margin-top: 20px;
+} 
+    
+
+button.back-button:hover {
+    background-color: black; 
+}
+
+.back-button-design{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: indianred;
+    outline: none;
+}
+
+#total {
+    text-align: center;
+    font-size: 24px;
+    color: indianred;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: indianred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: black;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+.gallery-item {
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+strong {
+    font-size: 20px;
+    display: block;
+}
+
+em {
+    font-size: 16px;
+    color: #7f8c8d;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    display: block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
